@@ -1,14 +1,14 @@
 def weatherAnnouncer(temp, clearSkies, windy):
     #try to combine these two statements into one if statement!
     tempClass = temperatureClassification(temp)
-    if(tempClass == 'Hot' and clearSkies and not windy):
+    if(tempClass == 'HOT' and clearSkies and not windy):
         return 'Wear summer clothes today.'
-    if(tempClass == 'Hot' and clearSkies and windy):
+    if(tempClass == 'HOT' and clearSkies and windy):
         return 'Wear summer clothes today.'
 
 
 def temperatureClassification(temp):
-    return 'Cold'
+    return 'COLD'
 
 
 #if hot and clear and not windy: 'Wear summer clothes today. 
