@@ -26,4 +26,4 @@ def temperatureClassification(temp):
 # # if cold AND windy AND PC: 'Just stay inside today.'
 # print('TESTING', weatherAnnouncer(22, False, True))
 # # if cold AND otherwise: 'Wear winter gear today.'
-# print('TESTING', weatherAnnouncer(2, True, True))
+# print('TESTING', weatherAnnouncer(2, True, True)) 
