@@ -8,7 +8,7 @@ def weatherAnnouncer(temp, clearSkies, windy):
 
 
 def temperatureClassification(temp):
-    return 'COLD'
+    pass
 
 
 #if hot and clear and not windy: 'Wear summer clothes today. 
@@ -26,4 +26,4 @@ print('TESTING', weatherAnnouncer(56, False, False))
 # if cold AND windy AND PC: 'Just stay inside today.'
 print('TESTING', weatherAnnouncer(22, False, True))
 # if cold AND otherwise: 'Wear winter gear today.'
-print('TESTING', weatherAnnouncer(2, True, True))
+print('TESTING', weatherAnnouncer(2, True, True)) 
