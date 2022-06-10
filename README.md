@@ -37,6 +37,7 @@ From this, we can determine that our program will read a total of 12 different w
 Use the table below as a reference for the correct function return statement based on each weather pattern. 
 
 | temp | tempClass | clearSkies | windy | RETURN STATEMENT |
+| ---- | --------- | ---------- | ----- | ---------------- |
 | 102 | HOT  | True  | True  | Wear summer clothes today. |
 | 85  | HOT  | True  | False | Wear summer clothes today. |
 | 98  | HOT  | False | True  | Wear summer clothes today, but bring a rain jacket just in case. |
