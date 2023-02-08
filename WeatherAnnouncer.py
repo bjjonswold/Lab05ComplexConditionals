@@ -1,14 +1,39 @@
 def weatherAnnouncer(temp, clearSkies, windy):
     #try to combine these two statements into one if statement!
     tempClass = temperatureClassification(temp)
-    if(tempClass == 'HOT' and clearSkies and not windy):
-        return 'Wear summer clothes today.'
     if(tempClass == 'HOT' and clearSkies and windy):
         return 'Wear summer clothes today.'
+    if(tempClass == 'HOT' and clearSkies and not windy):
+        return 'Wear summer clothes today.'
+    if(tempClass == 'HOT' and not clearSkies and windy):
+        return 'Wear summer clothes today, but bring a rain jacket just in case.'
+    if(tempClass == 'HOT' and not clearSkies and not windy):
+        return 'Wear summer clothes today, but bring an umbrella just in case.'
+    if(tempClass == 'FAIR' and clearSkies and windy):
+        return 'Wear a jacket today.'
+    if(tempClass == 'FAIR' and clearSkies and not windy):
+        return 'Wear whatever you would like today.'
+    if(tempClass == 'FAIR' and not clearSkies and windy):
+        return 'Wear a jacket today.'
+    if(tempClass == 'FAIR' and not clearSkies and not windy):
+        return 'Wear a jacket today.'
+    if(tempClass == 'COLD' and clearSkies and windy):
+        return 'Wear winter gear today.'
+    if(tempClass == 'COLD' and clearSkies and not windy):
+        return 'Wear winter gear today.'
+    if(tempClass == 'COLD' and not clearSkies and windy):
+        return 'Just stay inside today.'
+    if(tempClass == 'COLD' and not clearSkies and not windy):
+        return 'Wear winter gear today.'
 
 
 def temperatureClassification(temp):
-    pass
+    if temp < 40:
+        return "COLD"
+    elif temp < 75:
+        return "FAIR"
+    else:
+        return "HOT"
 
 
 #if hot and clear and not windy: 'Wear summer clothes today. 
